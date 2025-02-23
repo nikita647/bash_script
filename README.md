@@ -50,6 +50,8 @@ Before setting up repositories, ensure the following:
 2. Click on your profile picture in the top-right corner and select **Your organizations** from the dropdown menu.
 
 3. Click New organization > Choose a plan.
+   ![image](https://github.com/user-attachments/assets/28c55656-12a7-4988-aab3-23208516d7f0)
+
 
 4. Choose the plan type for your organization:
    - **Free** for basic repositories.
