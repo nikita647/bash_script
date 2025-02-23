@@ -1,154 +1,108 @@
 
-# Github Setup
+
+# VCS-Implementation - Application Code Repository Setup Guide
+
+| Created     |    Version   | Author | Comment | Reviewer |
+|:------------------:|:-------------:|:-------------:|:-------------:|:------------------:|
+| 25-04-2025  | V1   | Nikita joshi | Initial Commit |  | 
+| 
 
 
-| **Author** | **Created on** | **Version** | **Last updated by** | **Last edited on** | **Reviewer** |
-|------------|-------------|-----------|--------------|-------------|-----------|
-| Nikita Joshi | 11-02-25 | V1 | Nikita Joshi | 11-02-25 |   |
+## Table of Contents
+- [Introduction](#introduction)
+- [Prerequisites](#prerequisites)
+- [Repository Setup](#repos-setup)
+  -  [Create an Organization](#step-1-create-an-organization)
+  -  [Create a Repository](#step-2-create-a-repository)
+- [Best Practices](#best-practices)
+- [Conclusion](#conclusion)
+- [Contact Information](#contact-information)
 
-![image](https://github.com/user-attachments/assets/881977db-078d-4211-ab9a-a7e903b27413)
+___
 
-# Table of Contents
-1. [Introduction](#introduction)
-2. [Types of VCS](#types-of-vcs)
-3. [GIT](#git)
-4. [GIT Setup Prerequisites](#git-setup-prerequisites)
-5. [Git Installation on Ubuntu](#git-installation-on-ubuntu)
-   - [Step 1: Update System Packages](#step-1-update-system-packages)
-   - [Step 2: Installation of Git](#step-2-installation-of-git)
-   - [Step 3: Verify the version of Git](#step-3-verify-the-version-of-git)
-   - [Step 4: Configure Git on Ubuntu](#step-4-configure-git-on-ubuntu)
-     - [1. Check the public key](#1-check-the-public-key)
-     - [2. Create public key](#2-create-public-key)
-     - [3. Copy the public key](#3-copy-the-public-key)
-     - [4. Click on the Account setting](#4-click-on-the-account-setting)
-     - [5. Add New SSH key](#5-add-new-ssh-key)
-     - [6. Git clone](#6-git-clone)
-6. [Contact Information](#contact-information)
-7. [References](#references)
+## **Introduction**
 
+The OT-Microservices Project is a modular system designed to streamline organizational tasks using a microservices architecture. It consists of the following components:
 
-# Introduction
+- Frontend
 
-A Version Control System (VCS) is a tool that helps developers work together and keeps a detailed record of all changes made to their code over time
+- Employee API
 
-# Types of VCS
+- Attendance API
 
--   **Centralized version control system (CVCS):**
-  A single, central server stores all versions of the files, and  developers "check out" files to work on them. Changes are then committed back to the central server.
+- Salary API
 
--   **Distributed/Decentralized version control system (DVCS):** 
-Every developer has a full copy of the entire project history, including all files and changes, on their local machine. Changes can be shared directly between developers or through a central server.Developers can work offline and commit changes locally.
-
-# Git
-
-Git is a free and open-source Distributed Version Control System (DVCS) used to track changes in code and manage projects efficiently It is widely used in software development to maintain
-project history, resolve conflicts, and enable teamwork
-
-# Git Setup Prerequisites
-
-| **Requirement** | **Details**                                           |
-|-----------------|-------------------------------------------------------|
-| **OS**          | Ubuntu /Linux-based OS or Windows                     |
-| **RAM**         | 1 GB minimum                                          |
-| **Disk Space**  | 200 MB for Git installation                           |
-| **Processor**   | Any modern processor (Intel or AMD, 1 GHz or faster). |
-
-# Git Installation on Ubuntu
-
-This guide provides the steps to install and configure GitHub on Ubuntu.
-
-**Installation Steps**
-
-## Step 1: Update System Packages
-
-``` bash
-sudo apt update
-```
-
-## Step 2: Installation of Git
-
-**To install Git, use the apt package manager**
-
-``` bash
-sudo apt install git -y
-```
-![image](https://github.com/user-attachments/assets/545013cd-bfd1-4743-8b7b-8c4dd6e42dd4)
-
-## Step 3: Verify the version of Git
-``` bash
-git –version
-```
-![image](https://github.com/user-attachments/assets/2d5fe005-55b9-436a-97fc-58eb5e373bcd)
+This guide explains how to set up and organize the code repositories for these components in a Version Control System (VCS).
 
 
-## Step 4: Configure Git on Ubuntu
+## **Prerequisites**
 
-Before configuration on local machine of Git your account should be
-available on GitHub website.
+Before setting up repositories, ensure the following:  
+- Access to a working VCS GitHub 
+- Admin or Owner access to the repositories.
+
+#  **Repository Setup**
+
+### **Step 1: Create an Organization**
+
+1. Go to GitHub and log in to your account.
+
+2. Click on your profile picture in the top-right corner and select **Your organizations** from the dropdown menu.
+
+3. Click New organization > Choose a plan.
+
+4. Choose the plan type for your organization:
+   - **Free** for basic repositories.
+   - **Team** or **Enterprise** for advanced features.
+![image](https://github.com/user-attachments/assets/7c214510-8889-4a24-8def-5b032daba53a)
+
+5. Fill in the details:
+   - **Organization Name**: For example, `Snaatak-p12`.
+   - **Email Address**: Provide an email address associated with the organization.
+
+![Screenshot 2025-02-24 002425](https://github.com/user-attachments/assets/32863d3b-c600-41ad-b114-de267ab678f1)
 
 
-### Check the public key 
+### **Step 2: Create a Repository**
 
-> Go to the ./ssh directory for check public key is available or not
-![image](https://github.com/user-attachments/assets/c5ea93a8-3d94-4c7e-872e-719b35e2222a)
+1. Navigate to the organization.
+
+2. Click New repository.
+
+3. Fill in the repository details:
+   - **Repository Name**: For example, `frontend`.
+   - **Description**: Add a brief description of the repository.
+   - **Visibility**: Choose either **Public** or **Private**.
+   - Check **Initialize this repository with a README.md**.
+![Screenshot 2025-02-24 003721](https://github.com/user-attachments/assets/b222bf59-b81e-4c3a-b6b8-9aef669be09d)
 
 
+4. Click **Create repository**.
 
-**If the public key is not available, then create the key**
 
-### Create public key
-
-``` bash
-ssh-keygen
-```
-![image](https://github.com/user-attachments/assets/d329f0eb-3de3-49d7-887a-cbef69986333)
+![image](https://github.com/user-attachments/assets/f79fd463-acf1-41ca-acca-fe312136936d)
 
 
 
 
-### Copy the public key
-copy the public key and go you github account on web browser and singnin. 
 
-![image](https://github.com/user-attachments/assets/062283dc-6df9-4047-97e0-b7d9694d520e)
+## **Best Practices**
 
+Use meaningful repository names (e.g., attendance-service, employee-portal).
 
+Implement branch protection rules.
 
+Follow a consistent commit message format.
 
-### Go to the Account Setting 
+Use tags and releases for version control.
 
-1) Go you account
-2) Click on right side of your account setting
-3) click on ssh and gpg key
+Role-based access control for team members.
 
-![image](https://github.com/user-attachments/assets/fdbb80af-26ea-41b2-bdb3-a29a69f4b2f7)
-
+Better collaboration through team features and access settings.
 
 
-### Add New SSH key
-
-> Add ssh key by pressing new ssh key button
-
-![image](https://github.com/user-attachments/assets/04a7efb4-f348-4cf0-8e5e-8ee1d961f42d)
-
-
-
-
-### Add the title name
-
-Paste the ssh key in key box then click on add ssh key button
-
-![image](https://github.com/user-attachments/assets/ca16132a-e439-4a04-a67b-d5622762df0f)
-
-### Now click on your repo which want to clone on your local machine. Click on code 🡪 SSH 🡪 copy the code.
-
-![image](https://github.com/user-attachments/assets/d5e3b522-2cd0-4c71-9c2f-0e72c87819c9)
-
-
-
-## Git Clone
-**Go to your system and type or paste the code that you copied**
-![image](https://github.com/user-attachments/assets/4c25d0e2-4cef-4e62-9a84-1b09d9266d4d)
+# Conclusion
+A well-organized repository structure is essential for the success of the OT-Microservices Project. By setting up clear repositories and following version control best practices, you enable collaborative and maintainable development.
 
 
 
@@ -159,10 +113,6 @@ Paste the ssh key in key box then click on add ssh key button
 |-------------|---------------------------|
 | Nikita joshi | <jnikita647@gmail.com> |
 
-# References
 
-| **Link** | **Description** |
-|-----------------------------------|-------------------------------------|
-| [Git installation on Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu) | GitHub installation |
-| [GitHub SSH Configuraton](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/GitHub-SSH-Key-Setup-Config-Ubuntu-Linux) | GitHub Configuration |
-|[conclusion doc](https://github.com/avengers-p11/Documentation/tree/main/VCS%20Design%20%2B%20POC/Features%20of%20VCS/Conclusion%20doc)| why we choose GitHub |
+
+
