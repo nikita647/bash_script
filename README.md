@@ -1,19 +1,19 @@
 
 
-# VCS-Implementation - Application Code Repository Setup Guide
+# **Application Code Repository Setup Guide**
 
-| Created     |    Version   | Author | Comment | Reviewer |
-|:------------------:|:-------------:|:-------------:|:-------------:|:------------------:|
-| 25-04-2025  | V1   | Nikita joshi | Initial Commit |  | 
-| 
+| **Author** | **Created on** | **Version** | **Last updated by**|**Last Edited On**|**Level** |**Reviewer** |
+|------------|---------------------------|-------------|----------------|-----|-------------|-------------|
+| Nikita Joshi|  24-02-2025           | v2          | Nikita Joshi    |24-02-2025    |  internal review | Komal Jaiswal | 
 
 
-## Table of Contents
+## **Table of Contents**
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
-- [Repository Setup](#repos-setup)
+- [Repository Setup](#repository-setup)
   -  [Create an Organization](#step-1-create-an-organization)
   -  [Create a Repository](#step-2-create-a-repository)
+  - [Configure Role-Based Access Control (RBAC)](#step-3-configure-role-based-access-control-rbac)
 - [Best Practices](#best-practices)
 - [Conclusion](#conclusion)
 - [Contact Information](#contact-information)
@@ -41,7 +41,7 @@ Before setting up repositories, ensure the following:
 - Access to a working VCS GitHub 
 - Admin or Owner access to the repositories.
 
-#  **Repository Setup**
+##  **Repository Setup**
 
 ### **Step 1: Create an Organization**
 
@@ -84,23 +84,59 @@ Before setting up repositories, ensure the following:
 
 ![image](https://github.com/user-attachments/assets/f79fd463-acf1-41ca-acca-fe312136936d)
 
+## **Step 3: Configure Role-Based Access Control (RBAC)**
+
+1. **Navigate to the Organization Settings:**
+
+  - Go to GitHub, select your organization, and click on Settings.
+
+2. **Manage Teams and Members:**
+
+  - In the left sidebar, click Teams.
+
+  - Click New Team, enter a name, and set the Team Visibility.
+
+  - Click Create Team.
+
+
+![Screenshot 2025-02-24 132306](https://github.com/user-attachments/assets/a80989a9-031e-474d-9bd5-a76fcd886fde)
+
+  - Add members by searching for their usernames or email addresses.
+
+![Screenshot 2025-02-24 133135](https://github.com/user-attachments/assets/c54d4285-6fff-4b58-9dd1-7517003ac47b)
+
+
+3. **Set Repository Access:**
+
+  - Go to Repositories under the organization.
+
+  - Select the repository and navigate to Settings > Manage Access.
+
+  - Click Invite a collaborator and assign access levels:
+
+**Admin:** Full access (manage repository settings and permissions).
+
+**Maintainer:** Can push changes and manage branches.
+
+**Developer:** Can push code and create pull requests.
+
+![Screenshot 2025-02-24 133810](https://github.com/user-attachments/assets/44dc9a28-3625-4b9c-8034-7c044a7cff03)
+
 
 
 
 
 ## **Best Practices**
 
-Use meaningful repository names (e.g., attendance-service, employee-portal).
+- Use meaningful repository names (e.g., attendance-api, employee-api).
 
-Implement branch protection rules.
+- Implement branch protection rules.
 
-Follow a consistent commit message format.
+- Follow a consistent commit message format.
 
-Use tags and releases for version control.
+- Role-based access control for team members.
 
-Role-based access control for team members.
-
-Better collaboration through team features and access settings.
+- Better collaboration through team features and access settings.
 
 
 # Conclusion
@@ -111,10 +147,9 @@ A well-organized repository structure is essential for the success of the OT-Mic
 
 # Contact Information
 
-| **Name**    | **Email address**         |
-|-------------|---------------------------|
-| Nikita joshi | <jnikita647@gmail.com> |
-
+| **Name** | **Email address**            | **Github ID**
+|----------|-------------------------------|-------------------|
+| Nikita joshi    | Nikita.Joshi@mygurukulam.co    | https://github.com/jnikita19  |
 
 
 
